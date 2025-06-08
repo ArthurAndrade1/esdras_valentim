@@ -1,0 +1,24 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Coloca as rotas específicas primeiro
+RewriteRule ^filtrar-(.*)$ filtrar.php?pagina=$1 [L]
+RewriteRule ^eventos-(.*)$ eventos.php?pagina=$1 [L]
+RewriteRule ^pregacoes-(.*)$ pregacoes.php?pagina=$1 [L]
+RewriteRule ^evento-(.*)$ evento.php?url=$1 [L]
+RewriteRule ^membro(.*)$ membro.php [L]
+
+
+# Rota genérica para `igreja.php`, ignorando URLs que comecem com "evento-" ou "membro"
+RewriteCond %{REQUEST_URI} !^/filtrar-
+RewriteCond %{REQUEST_URI} !^/eventos-
+RewriteCond %{REQUEST_URI} !^/pregacoes-
+RewriteCond %{REQUEST_URI} !^/evento-
+RewriteCond %{REQUEST_URI} !^/membro
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ igreja.php?nome=$1 [L,QSA]
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml application/xhtml+xml application/rss+xml application/x-javascript
+</IfModule>
