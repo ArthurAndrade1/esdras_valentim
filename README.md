@@ -2,10 +2,6 @@
 
 Landing page institucional para o nutricionista Esdras Valentim, com foco em saúde, estética e bem-estar. Desenvolvida com HTML5, Tailwind CSS e animações AOS. Totalmente responsiva e otimizada para dispositivos móveis.
 
-## 🔗 Acesse o site
-
-[https://esdrasvalentim.com.br](https://esdrasvalentim.com.br)
-
 ---
 
 ## 🚀 Funcionalidades
