@@ -4,11 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Esdras Valentim | Nutricionista</title>
+  <link rel="icon" href="./assets/images/logo/favicon.svg" type="image/svg+xml">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    @font-face {
+      font-family: 'TTFirsNeue';
+      src: url('./assets/fonts/TTFirsNeue-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'TTFirsNeue';
+      src: url('./assets/fonts/TTFirsNeue-DemiBold.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'TTFirsNeue';
+      src: url('./assets/fonts/TTFirsNeue-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    body {
+      font-family: 'TTFirsNeue', sans-serif;
+    }
+
     header::after {
       content: "";
       position: absolute;
@@ -20,17 +45,21 @@
       clip-path: ellipse(75% 100% at 50% 100%);
     }
   </style>
+
 </head>
 <body class="bg-white text-gray-800">
 
 <!-- NAVBAR -->
 <nav class="fixed w-full bg-white shadow z-50 py-4 px-6 md:px-16 flex justify-between items-center">
-  <div class="text-[#0377FC] font-bold text-xl">Esdras Valentim</div>
+  <div class="flex items-center h-10">
+    <img src="./assets/images/logo/Logotipo-01.svg" alt="Logotipo Esdras Valentim" class="h-10 w-auto">
+  </div>
+  <!-- <div class="text-[#06038D] font-bold text-xl">Esdras Valentim</div> -->
   <div class="hidden md:flex gap-6 text-sm font-medium">
-    <a href="#sobre" class="hover:text-[#0377FC]">Sobre</a>
-    <a href="#servicos" class="hover:text-[#0377FC]">Serviços</a>
-    <a href="#planos" class="hover:text-[#0377FC]">Planos</a>
-    <a href="#contato" class="hover:text-[#0377FC]">Contato</a>
+    <a href="#sobre" class="hover:text-[#06038D]">Sobre</a>
+    <a href="#servicos" class="hover:text-[#06038D]">Serviços</a>
+    <a href="#planos" class="hover:text-[#06038D]">Planos</a>
+    <a href="#contato" class="hover:text-[#06038D]">Contato</a>
   </div>
 </nav>
 
@@ -39,18 +68,18 @@
   <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center px-6 gap-10">
     <!-- Texto -->
     <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right">
-      <h1 class="text-4xl md:text-5xl font-bold text-[#0377FC] mb-4">Esdras Valentim</h1>
+      <h1 class="text-4xl md:text-5xl font-bold text-[#06038D] mb-4">Esdras Valentim</h1>
       <p class="text-lg font-medium text-gray-800 mb-2">Nutricionista | CRN 22100427</p>
       <p class="text-base text-gray-700 mb-6">Atendimento individualizado com foco em saúde e bem-estar.</p>
       <div class="flex justify-center md:justify-start gap-4">
-        <a href="https://wa.me/5527998011020" class="bg-[#0377FC] text-white px-6 py-3 rounded-md font-medium">Agendar Consulta</a>
-        <a href="#planos" class="border border-[#0377FC] text-[#0377FC] px-6 py-3 rounded-md font-medium">Ver Planos</a>
+        <a href="https://wa.me/5527998011020" class="bg-[#06038D] text-white px-6 py-3 rounded-md font-medium">Agendar Consulta</a>
+        <a href="#planos" class="border border-[#06038D] text-[#06038D] px-6 py-3 rounded-md font-medium">Ver Planos</a>
       </div>
     </div>
 
     <!-- Imagem -->
     <div class="md:w-1/2" data-aos="fade-left">
-      <img src="./assets/images/about/Foto_Esdras_Crop_Final.jpg" alt="Esdras Valentim" class="rounded-xl w-full h-auto object-cover shadow-xl">
+      <img src="./assets/images/about/Foto_Esdras.jpg" alt="Esdras Valentim" class="rounded-xl w-full h-auto object-cover shadow-xl">
     </div>
   </div>
 </header>
@@ -58,20 +87,20 @@
 <!-- SOBRE -->
 <section id="sobre" class="text-center py-24 px-4" style="background-color: rgb(4 46 95 / var(--tw-bg-opacity, 1))" data-aos="fade-up">
   <div class="max-w-3xl mx-auto">
-    <h2 class="text-3xl font-semibold text-[#0377FC] mb-4">Sobre Mim</h2>
+    <h2 class="text-3xl font-semibold text-[#93c5fd] mb-4">Sobre Mim</h2>
     <p class="text-lg text-white">
-      Sou nutricionista formado pela Universidade Vila Velha (UVV), com foco em promover saúde, bem-estar e qualidade de vida por meio da alimentação funcional, equilibrada e individualizada.
+      Sou nutricionista formado pela Universidade Vila Velha (UVV), Pós graduado em Nutrição Clínica e Esportiva UNIGUAÇU, com foco em promover saúde, bem-estar e qualidade de vida por meio da alimentação funcional, equilibrada e individualizada.
     </p>
   </div>
 </section>
 
 <!-- SERVIÇOS -->
-<section id="servicos" class="bg-gray-50 py-24 px-4" data-aos="fade-up">
+<section id="servicos"  class="bg-white py-24 px-4" data-aos="fade-up">
   <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-3xl font-semibold text-[#0377FC] mb-10">Serviços</h2>
+    <h2 class="text-3xl font-semibold text-[#06038D] mb-10">Serviços</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
-        <div class="mb-4 text-[#0377FC]">
+        <div class="mb-4 text-[#06038D]">
           <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
@@ -80,16 +109,7 @@
         <p class="text-gray-600">Tratamento para diabetes, hipertensão, colesterol e outras condições.</p>
       </div>
       <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
-        <div class="mb-4 text-[#0377FC]">
-          <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-semibold mb-2">Emagrecimento Saudável</h3>
-        <p class="text-gray-600">Planos personalizados com foco em reeducação alimentar e resultados sustentáveis.</p>
-      </div>
-      <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
-        <div class="mb-4 text-[#0377FC]">
+        <div class="mb-4 text-[#06038D]">
           <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
@@ -98,97 +118,201 @@
         <p class="text-gray-600">Desempenho físico e recuperação para atletas e praticantes de exercícios.</p>
       </div>
       <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
-        <div class="mb-4 text-[#0377FC]">
+        <div class="mb-4 text-[#06038D]">
           <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </div>
-        <h3 class="text-xl font-semibold mb-2">Nutrição Clínica</h3>
-        <p class="text-gray-600">Tratamento para diabetes, hipertensão, colesterol e outras condições.</p>
+        <h3 class="text-xl font-semibold mb-2">Nutrição Comportamental</h3>
+        <p class="text-gray-600">O objetivo é identificar gatilhos emocionais, comportamentos automáticos e promover mudanças sustentáveis com foco na consciência, autonomia e equilíbrio.</p>
       </div>
       <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
-        <div class="mb-4 text-[#0377FC]">
+        <div class="mb-4 text-[#06038D]">
+          <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Nutrição Funcional</h3>
+        <p class="text-gray-600">Foca na individualidade bioquímica de cada pessoa, buscando identificar e tratar desequilíbrios no organismo.</p>
+      </div>
+      <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
+        <div class="mb-4 text-[#06038D]">
           <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
           </svg>
         </div>
         <h3 class="text-xl font-semibold mb-2">Emagrecimento Saudável</h3>
         <p class="text-gray-600">Planos personalizados com foco em reeducação alimentar e resultados sustentáveis.</p>
-      </div>
-      <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
-        <div class="mb-4 text-[#0377FC]">
-          <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-semibold mb-2">Nutrição Esportiva</h3>
-        <p class="text-gray-600">Desempenho físico e recuperação para atletas e praticantes de exercícios.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- DEPOIMENTOS -->
-<section class="bg-white py-24 px-4" data-aos="fade-up">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-semibold text-[#0377FC] mb-10">Depoimentos</h2>
-    <div class="space-y-8">
-      <blockquote class="relative p-6 bg-gray-100 rounded-xl shadow">
-        <svg class="absolute -top-3 left-3 w-6 h-6 text-[#0377FC]" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M7.17 6a4.001 4.001 0 0 0-3.905 3.05l-.25 1a3.992 3.992 0 0 0 1.102 3.85A4.001 4.001 0 0 0 7.17 18a1 1 0 1 0 0-2 2 2 0 1 1 0-4 1 1 0 1 0 0-2 2 2 0 1 1 0-4Z" />
-        </svg>
-        <p class="text-gray-700 italic">"Comecei meu acompanhamento com o Esdras há 3 meses e já me sinto com muito mais energia e autoestima. Excelente profissional!"</p>
-        <footer class="mt-4 text-sm font-semibold text-gray-600">Camila R.</footer>
-      </blockquote>
-      <blockquote class="relative p-6 bg-gray-100 rounded-xl shadow">
-        <svg class="absolute -top-3 left-3 w-6 h-6 text-[#0377FC]" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M7.17 6a4.001 4.001 0 0 0-3.905 3.05l-.25 1a3.992 3.992 0 0 0 1.102 3.85A4.001 4.001 0 0 0 7.17 18a1 1 0 1 0 0-2 2 2 0 1 1 0-4 1 1 0 1 0 0-2 2 2 0 1 1 0-4Z" />
-        </svg>
-        <p class="text-gray-700 italic">"Atendimento humanizado e focado em resultados reais. Recomendo muito!"</p>
-        <footer class="mt-4 text-sm font-semibold text-gray-600">Lucas M.</footer>
-      </blockquote>
+<!-- ABORDAGEM -->
+<section id="abordagem" class="bg-gray-50 py-24 px-6" data-aos="fade-up">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold text-[#06038D] mb-10">Abordagem</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+      <!-- Anamnese -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-[#06038D] mb-2">Anamnese</h3>
+        <p class="text-gray-700">Perguntas e dúvidas que perguntarei com uma boa conversa com o paciente.</p>
+      </div>
+      <!-- Avaliação Física -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-[#06038D] mb-2">Avaliação Física</h3>
+        <p class="text-gray-700">Avaliação com fita e adipômetro a fim de saber sua composição corporal.</p>
+      </div>
+      <!-- Planejamento -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-[#06038D] mb-2">Planejamento</h3>
+        <p class="text-gray-700">Toda a consulta dura em média 1 hora. Irei entender como o paciente lida com sua alimentação e estarei montando uma rotina e planejamento dietético de acordo com suas necessidades.</p>
+      </div>
+      <!-- Acompanhamento -->
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-[#06038D] mb-2">Acompanhamento</h3>
+        <p class="text-gray-700">Irei te enviar um breve questionário toda semana via WhatsApp, além de esclarecer dúvidas recorrentes ao plano.</p>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- ACOMPANHAMENTO -->
+<section id="acompanhamento" class="bg-white py-24 px-6" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold text-[#06038D] mb-12">Acompanhamento</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+      
+      <!-- Item 1 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-[#0377FC] mb-2">1. Custo-Benefício</h3>
+        <p class="text-gray-700">Valor mais acessível que consultas avulsas, oferecendo suporte completo e eficaz para alcançar seus objetivos.</p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-[#0377FC] mb-2">2. Evolução Constante</h3>
+        <p class="text-gray-700">Monitoramento regular dos progressos e ajustes na alimentação para garantir evolução sustentável e duradoura.</p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-[#0377FC] mb-2">3. Adesão ao Plano Alimentar</h3>
+        <p class="text-gray-700">Ter o suporte contínuo de um nutricionista facilita a adesão ao plano alimentar.</p>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold text-[#0377FC] mb-2">4. Mudança de Hábitos</h3>
+        <p class="text-gray-700">Com meu acompanhamento, você recebe ferramentas e estratégias para implementar essas mudanças de forma gradual e eficaz.</p>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition md:col-span-2">
+        <h3 class="text-xl font-semibold text-[#0377FC] mb-2">5. Mudança Comportamental</h3>
+        <p class="text-gray-700">Eu ajudo você a identificar gatilhos e situações que podem levar a comportamentos alimentares inadequados, trabalhando juntos para superá-los.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS COM SWIPER -->
+<!-- <section class="bg-gray-50 py-24 px-6" data-aos="fade-up">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold text-[#06038D] text-center mb-12">Depoimentos</h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide bg-white p-6 rounded-2xl shadow flex flex-col">
+          <div class="flex items-center gap-4 mb-4">
+            <img src="./assets/images/depoimentos/camila.jpg" alt="Camila R." class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <p class="font-semibold text-[#06038D]">Camila R.</p>
+              <p class="text-sm text-gray-500">Paciente</p>
+            </div>
+          </div>
+          <p class="text-gray-700 italic text-base">"Comecei meu acompanhamento com o Esdras há 3 meses e já me sinto com muito mais energia e autoestima. Excelente profissional!"</p>
+        </div>
+
+        <div class="swiper-slide bg-white p-6 rounded-2xl shadow flex flex-col">
+          <div class="flex items-center gap-4 mb-4">
+            <img src="./assets/images/depoimentos/lucas.jpg" alt="Lucas M." class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <p class="font-semibold text-[#06038D]">Lucas M.</p>
+              <p class="text-sm text-gray-500">Paciente</p>
+            </div>
+          </div>
+          <p class="text-gray-700 italic text-base">"Atendimento humanizado e focado em resultados reais. Recomendo muito!"</p>
+        </div>
+      </div>
+      <div class="swiper-pagination mt-6" style="position: fixed"></div>
+    </div>
+  </div>
+</section> -->
 
 <!-- PLANOS -->
-<section id="planos" class="bg-white py-16 px-4" data-aos="fade-up">
+<section id="planos" class="bg-gray-50 py-24 px-4" data-aos="fade-up">
   <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-2xl font-semibold text-[#0377FC] mb-10">Planos de Atendimento</h2>
+    <h2 class="text-2xl font-semibold text-[#06038D] mb-10">Planos de Atendimento</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="border border-gray-300 rounded-xl p-6 shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-[#0377FC] mb-2">Básico</h3>
+        <h3 class="text-xl font-semibold text-[#06038D] mb-2">Consulta Inicial</h3>
         <p class="text-gray-600 mb-4">Consulta única + plano alimentar personalizado.</p>
-        <p class="text-2xl font-bold text-[#0377FC] mb-4">R$120</p>
-        <a href="https://wa.me/5527998011020" class="inline-block bg-[#0377FC] hover:bg-[#0366d6] text-white px-6 py-2 rounded-lg font-medium">Contratar</a>
-      </div>
-      <div class="border border-[#0377FC] rounded-xl p-6 shadow-lg bg-blue-50">
-        <h3 class="text-xl font-semibold text-[#0377FC] mb-2">Essencial</h3>
-        <p class="text-gray-700 mb-4">Consulta + 2 retornos + acompanhamento via WhatsApp.</p>
-        <p class="text-2xl font-bold text-[#0377FC] mb-4">R$240</p>
-        <a href="https://wa.me/5527998011020" class="inline-block bg-[#0377FC] hover:bg-[#0366d6] text-white px-6 py-2 rounded-lg font-medium">Contratar</a>
+        <p class="text-2xl font-bold text-[#06038D] mb-4">R$340</p>
+        <p class="text-2xl font-bold text-[#06038D] mb-4">(ou 1x R$ 360 no crédito)</p>
+        <a href="https://wa.me/5527998011020" class="inline-block bg-[#06038D] hover:bg-[#0366d6] text-white px-6 py-2 rounded-lg font-medium">Contratar</a>
       </div>
       <div class="border border-gray-300 rounded-xl p-6 shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold text-[#0377FC] mb-2">Premium</h3>
+        <h3 class="text-xl font-semibold text-[#06038D] mb-2">Consulta Avulsa</h3>
+        <p class="text-gray-600 mb-4">Consulta única + plano alimentar personalizado.</p>
+        <p class="text-2xl font-bold text-[#06038D] mb-4">R$300</p>
+        <p class="text-2xl font-bold text-[#06038D] mb-4">(ou 1x R$ 320 no crédito)</p>
+        <a href="https://wa.me/5527998011020" class="inline-block bg-[#06038D] hover:bg-[#0366d6] text-white px-6 py-2 rounded-lg font-medium">Contratar</a>
+      </div>
+      <div class="border border-[#06038D] rounded-xl p-6 shadow-lg bg-blue-50">
+        <h3 class="text-xl font-semibold text-[#06038D] mb-2">Plano Trimestral</h3>
+        <p class="text-gray-700 mb-4">Consulta + 2 retornos + acompanhamento via WhatsApp.</p>
+        <p class="text-2xl font-bold text-[#06038D] mb-4">R$690</p>
+        <p class="text-2xl font-bold text-[#06038D] mb-4">(ou 3x R$247,34 no crédito)</p>
+        <a href="https://wa.me/5527998011020" class="inline-block bg-[#06038D] hover:bg-[#0366d6] text-white px-6 py-2 rounded-lg font-medium">Contratar</a>
+      </div>
+      <div class="border border-gray-300 rounded-xl p-6 shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-[#06038D] mb-2">Plano Semestral</h3>
         <p class="text-gray-600 mb-4">Consulta + retornos ilimitados por 3 meses.</p>
-        <p class="text-2xl font-bold text-[#0377FC] mb-4">R$390</p>
-        <a href="https://wa.me/5527998011020" class="inline-block bg-[#0377FC] hover:bg-[#0366d6] text-white px-6 py-2 rounded-lg font-medium">Contratar</a>
+        <p class="text-2xl font-bold text-[#06038D] mb-4">R$1200</p>
+        <p class="text-2xl font-bold text-[#06038D] mb-4">(ou 6x R$221,41 no crédito)</p>
+        <a href="https://wa.me/5527998011020" class="inline-block bg-[#06038D] hover:bg-[#0366d6] text-white px-6 py-2 rounded-lg font-medium">Contratar</a>
+      </div>
+      <div class="border border-gray-300 rounded-xl p-6 shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-[#06038D] mb-2">Plano Anual</h3>
+        <p class="text-gray-600 mb-4">Consulta + retornos ilimitados por 3 meses.</p>
+        <p class="text-2xl font-bold text-[#06038D] mb-4">R$2040</p>
+        <p class="text-2xl font-bold text-[#06038D] mb-4">(ou 12x R$203,98 no crédito)</p>
+        <a href="https://wa.me/5527998011020" class="inline-block bg-[#06038D] hover:bg-[#0366d6] text-white px-6 py-2 rounded-lg font-medium">Contratar</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="bg-gray-50 py-24 px-4" data-aos="fade-up">
+<section class="bg-white py-24 px-4" data-aos="fade-up">
   <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl font-semibold text-[#0377FC] mb-10 text-center">Perguntas Frequentes</h2>
+    <h2 class="text-3xl font-semibold text-[#06038D] mb-10 text-center">Perguntas Frequentes</h2>
     <div class="space-y-6">
       <details class="group bg-white p-6 rounded-xl shadow">
         <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-800">
           Como funciona a primeira consulta?
           <span class="transition transform group-open:rotate-180">&#x25BC;</span>
         </summary>
-        <p class="mt-2 text-gray-600">A primeira consulta dura cerca de 1 hora e inclui avaliação nutricional, análise de exames (se houver), histórico clínico e prescrição de plano alimentar personalizado.</p>
+        <p class="mt-2 text-gray-600">
+          É cobrado 50% do valor da consulta para concretizar o agendamento. O valor será abatido futuramente do plano escolhido no dia da consulta.</p>
+        <p class="mt-2 text-gray-600">
+          O valor antecipado só será devolvido o valor de 50% do valor do sinal (metade do valor do sinal) em desistência.</p>
+        <p class="mt-2 text-gray-600">
+          A primeira consulta dura cerca de 1 hora e inclui avaliação nutricional, análise de exames (se houver), histórico clínico e prescrição de plano alimentar personalizado.</p>
       </details>
       <details class="group bg-white p-6 rounded-xl shadow">
         <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-800">
@@ -202,7 +326,16 @@
           Como são feitos os acompanhamentos?
           <span class="transition transform group-open:rotate-180">&#x25BC;</span>
         </summary>
-        <p class="mt-2 text-gray-600">Acompanhamentos podem ser semanais ou quinzenais via WhatsApp, além de consultas presenciais ou online agendadas conforme o plano contratado.</p>
+        <p class="mt-2 text-gray-600">Acompanhamento mensal de acordo com o tempo do plano escolhido e suporte 24 horas via WhatsApp, usando o método check in.</p>
+      </details>
+      <details class="group bg-white p-6 rounded-xl shadow">
+        <summary class="flex justify-between items-center cursor-pointer font-medium text-gray-800">
+          Realizo consultas online?
+          <span class="transition transform group-open:rotate-180">&#x25BC;</span>
+        </summary>
+        <p class="mt-2 text-gray-600">
+          Sim! Atendo também de forma online, com a mesma atenção e qualidade do atendimento presencial. As consultas são feitas por chamada de vídeo, e você recebe todos os materiais e orientações por WhatsApp e se preferir e-mail.
+        </p>
       </details>
     </div>
   </div>
@@ -220,9 +353,10 @@
       <div>
         <h3 class="font-semibold text-white mb-1">Estamos localizados em:</h3>
         <p class="text-blue-100 text-sm leading-relaxed">
-          Av. Champagnat, 583, Praia da Costa<br />
-          Vila Velha - ES, 29101-390<br />
-          Sala 102 - Blue Office<br />
+          Centro Médico Dr. Nilton de Barros<br />
+          Avenida Champagnat, 583<br />
+          Praia da Costa - Vila Velha, 29101-390<br />
+          Sala 102<br />
           <a href="https://www.google.com/maps?q=Av.+Champagnat,+583+-+Praia+da+Costa,+Vila+Velha+-+ES" target="_blank" class="text-blue-300 font-medium hover:underline">Abrir no Google Maps</a>
         </p>
       </div>
@@ -236,7 +370,7 @@
       <div>
         <h3 class="font-semibold text-white mb-1">Como posso te ajudar?</h3>
         <p class="text-blue-100 text-sm leading-relaxed">
-          <a href="mailto:esdras.nutri@gmail.com" class="block hover:underline">esdras.nutri@gmail.com</a>
+          <a href="mailto:esdras.nutri@hotmail.com" class="block hover:underline">esdras.nutri@hotmail.com</a>
           <a href="https://wa.me/5527998011020" class="block hover:underline">(27) 99801-1020</a>
         </p>
       </div>
@@ -267,6 +401,24 @@
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({ duration: 800, once: true });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    loop: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      }
+    }
+  });
 </script>
 </body>
 </html>
